@@ -1,2 +1,4 @@
 # CodeWars
-https://www.codewars.com/
+
+Solutions for https://www.codewars.com/ 
+
