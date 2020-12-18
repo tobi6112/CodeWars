@@ -1,6 +1,8 @@
 package kata.fundamentals
 
+import kotlin.math.floor
 import kotlin.math.pow
+import kotlin.math.sqrt
 
 //https://www.codewars.com/kata/5592e3bd57b64d00f3000047
 object ASum {
@@ -15,6 +17,12 @@ object ASum {
         }
 
         return if(res == m) n else -1
+    }
+
+    //Alternative solution
+    fun findNb2(m: Long): Long {
+        val n = (sqrt(8 * sqrt(m.toDouble()) + 1) - 1) / 2;
+        return if(n == floor(n)) n.toLong() else -1
     }
 }
 

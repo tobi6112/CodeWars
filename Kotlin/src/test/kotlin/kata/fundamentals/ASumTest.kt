@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 internal class ASumTest {
 
     private fun testing(n: Long, expected: Long) {
-        var actual = ASum.findNb(n)
+        val actual = ASum.findNb2(n)
         assertEquals(expected, actual)
     }
     @Test
